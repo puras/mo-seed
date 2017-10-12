@@ -10,9 +10,20 @@
         <version>0.0.1</version>
     </parent>
 
-    <groupId>me.puras.mo.seed.backendt</groupId>
+    <groupId>me.puras.mo.seed.backend</groupId>
     <artifactId>mo-boot-seed</artifactId>
     <version>0.1.0</version>
 
+    <properties>
+        <druid-starter.version>1.1.3</druid-starter.version>
+    </properties>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid-starter.version}</version>
+        </dependency>
+    </dependencies>
 </project>
