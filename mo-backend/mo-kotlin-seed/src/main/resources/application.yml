@@ -1,0 +1,21 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+logging:
+  level: debug
+logging.level.me.puras.mo: debug
+org.mybatis: debug
+org.springfreamework: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/kaipai_book?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+mybatis:
+  config-location: "classpath:/mybatis-config.xml"
+  type-aliases-package: me.puras.mo.seed.kotlin.domain
+  mapper-locations: ["classpath:/me/puras/mo/seed/kotlin/service/**/*Repository.xml", "classpath:/me/puras/common/persistence/*Mapper.xml"]
+

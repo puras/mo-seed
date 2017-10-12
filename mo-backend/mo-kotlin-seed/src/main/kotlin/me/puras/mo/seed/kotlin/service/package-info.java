@@ -1,0 +1,1 @@
+package me.puras.mo.seed.kotlin.service;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.puras.mo.seed.kotlin.service.user.UserRepository">
+    <select id="findAll" resultType="User">
+        <include refid="select" />
+        <include refid="common.limit" />
+    </select>
+
+    <select id="countAll" resultType="Long">
+        <include refid="common.count" />
+        <include refid="table_name" />
+    </select>
+
+    <sql id="select">
+        select
+        id,
+        mobile,
+        nick_name AS nickName
+        from <include refid="table_name" />
+    </sql>
+
+    <sql id="table_name">
+        user
+    </sql>
+</mapper>
