@@ -13,4 +13,12 @@
     <groupId>me.puras.mo.seed.backend</groupId>
     <artifactId>mo-boot-seed</artifactId>
     <version>0.2.0</version>
+
+    <repositories>
+        <repository>
+            <id>mo-repo</id>
+            <name>Mo Manve Repo</name>
+            <url>https://raw.githubusercontent.com/puras/mo-repo/master/repository/</url>
+        </repository>
+    </repositories>
 </project>
